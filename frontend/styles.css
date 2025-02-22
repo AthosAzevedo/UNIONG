@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 53px;
+    background: white;
+}
+
+.pageImage{
+
+width: fit-content;
+height: 872px;
+left: 0px;
+top: 0px;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+
+main {
+    display: flex;
+    min-height: calc(100vh - 150px); 
+}
+
+
+.left-side {
+    flex: 7;
+    background: url("assets/img/pageImage.png") no-repeat center center/cover; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+
+.overlay {
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+
+.hero-content {
+z-index: 2;
+justify-content: center;
+
+}
+
+.hero-content h1 {
+
+font-family: 'Marko One';
+font-style: normal;
+font-weight: 400;
+font-size: 75px;
+margin: 0px;
+}
+
+.hero-content img {
+    width: 137px;
+    height: 100px;
+}
+
+.hero-content p {
+position: absolute;
+font-family: 'Marko One';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 32px;
+
+margin: 0px;
+
+
+color: #FFFFFF;
+
+}
+
+
+
+
+
+.teste{
+    align-items: center;
+    display: flex;
+}
+
+.right-side {
+    flex: 3; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white; 
+}
+
+.signup {
+    background: white;
+    padding: 20px;
+    width: 90%; 
+    max-width: 300px; 
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.signup h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.signup form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.signup input, .signup button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.signup button {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.signup button:hover {
+    background: #333;
+}
+
+footer {
+    background: black;
+    color: white;
+    padding: 25px 40px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
+    padding: ;
+}
+
+
+.contact-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+
+.contact-wrapper p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+}
+
+
+.contact {
+    display: flex;
+    gap: 10px;
+}
+
+.contact input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact button:hover {
+    background: #ddd;
+}
+
+
+
+.logo {
+    width: 66px;
+    height: 53px;
+    align-items: center;
+
+    img{
+        width: 66px;
+        height: 53px;
+
+    }
+}
+
+.social a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+.copy-container {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.copy-container p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: black;
+}
