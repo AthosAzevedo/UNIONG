@@ -1,7 +1,5 @@
-/************************************************
- * RESET BÁSICO
- ************************************************/
- * {
+/* RESET BÁSICO */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -9,46 +7,80 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   color: #000;
+  background-color: #f4f4f4;
 }
 
-/************************************************
- * ESTILOS PARA A TELA DE LOGIN
- ************************************************/
-
-/* Header da tela de Login */
+/* ===== HEADER GERAL ===== */
 .navBar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  height: 53px;
   background: white;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.cadastroLeft{
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: 68%;  
+}
+.header-cadastro {
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.logo img {
-  height: 50px;
+/* Logos */
+header img,
+header img {
+  justify-content: start;
+  height: 45px;
 }
 
-.navBar ul {
+.logoImage{
+  justify-self: start;
+}
+
+/* Navegação */
+nav ul {
   list-style: none;
   display: flex;
   gap: 20px;
 }
 
-.navBar a {
+nav a {
   text-decoration: none;
   color: #000;
   font-weight: bold;
   transition: 0.3s;
 }
 
-.navBar a:hover {
+nav a:hover {
   color: #6a00f4;
 }
 
-/* Main da tela de Login */
+/* Ícone de usuário */
+.user-icon-cadastro {
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: bold;
+  left: 10px;
+}
+
+/* ===== PÁGINA LOGIN ===== */
 main {
   display: flex;
   min-height: calc(100vh - 150px);
@@ -60,8 +92,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-align: center;
   position: relative;
 }
 
@@ -76,26 +106,32 @@ main {
 
 .hero-content {
   z-index: 2;
+  text-align: center;
+  color: white;
+}
+
+.teste{
+  display: flex;
+  align-items: center;
 }
 
 .hero-content h1 {
+  font-family: 'Marko One';
   font-size: 75px;
   margin: 0;
-  font-weight: normal;
 }
 
 .hero-content img {
   width: 137px;
   height: 100px;
-  margin-left: 10px;
 }
 
 .hero-content p {
+  font-family: 'Marko One';
   font-size: 32px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-/* Seção direita da tela de Login */
 .right-side {
   flex: 3;
   display: flex;
@@ -112,11 +148,6 @@ main {
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-}
-
-.signup h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
 }
 
 .signup form {
@@ -144,149 +175,21 @@ main {
   background: #333;
 }
 
-/* Footer da tela de Login */
-footer {
-  background: black;
-  color: white;
-  padding: 25px 40px;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.contact-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.contact-wrapper p {
-  margin: 0;
-  font-size: 1.2rem;
-  text-align: left;
-}
-
-.contact {
-  display: flex;
-  gap: 10px;
-}
-
-.contact input {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1rem;
-}
-
-.contact button {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background: white;
-  color: black;
-  cursor: pointer;
-  transition: background 0.3s ease;
-}
-
-.contact button:hover {
-  background: #ddd;
-}
-
-.social a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-
-.copy-container {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-  margin-top: 20px;
-  border-radius: 0px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.copy-container p {
-  margin: 0;
-  font-size: 1.2rem;
-  color: black;
-}
-
-/************************************************
- * ESTILOS PARA A TELA DE CADASTRAR AÇÕES
- ************************************************/
-
-/* Header do Cadastro */
-.header-cadastro {
-  width: 100%;
-  height: 60px;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-
-.logo-cadastro img {
-  height: 45px;
-}
-
-.nav-cadastro ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.nav-cadastro a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.nav-cadastro a:hover {
-  color: #6a00f4;
-}
-
-.user-icon-cadastro {
-  width: 40px;
-  height: 40px;
-  background-color: #000;
-  color: #fff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-}
-
-/* Main do Cadastro */
+/* ===== PÁGINA CADASTRO AÇÕES ===== */
 .main-cadastro {
   min-height: calc(100vh - 60px - 120px);
   background: url('assets/img/pageImage.png') no-repeat center center/cover;
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Card do formulário de Cadastro */
 .form-card-cadastro {
   background-color: rgba(0, 0, 0, 0.9);
   width: 350px;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -307,7 +210,6 @@ footer {
   color: #000;
 }
 
-/* Toggle (Aceitando voluntários) */
 .toggle-group-cadastro {
   display: flex;
   align-items: center;
@@ -316,26 +218,87 @@ footer {
   font-size: 0.95rem;
 }
 
-/* Switch (pode ser aproveitado pelas duas telas, se precisar) */
+.btn-pronto-cadastro {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right, #000, #6a00f4);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+/* ===== FOOTERS ===== */
+footer {
+  background: black;
+  color: white;
+  padding: 25px 40px;
+  text-align: center;
+}
+
+.footer-cadastro {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 20px 40px 20px;
+}
+
+.contact,
+.contact-cadastro {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.contact input,
+.contact-cadastro input {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.contact button,
+.contact-cadastro button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: white;
+  color: black;
+}
+
+.copy-container {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.copy-container p {
+  margin: 0;
+  color: black;
+}
+
+/* Componentes reutilizáveis */
 .switch {
   position: relative;
   display: inline-block;
   width: 50px;
   height: 28px;
 }
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
+
 .slider {
   position: absolute;
   cursor: pointer;
   background-color: #ccc;
-  top: 0; left: 0; right: 0; bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   transition: 0.4s;
   border-radius: 28px;
 }
+
 .slider:before {
   position: absolute;
   content: '';
@@ -347,82 +310,11 @@ footer {
   transition: 0.4s;
   border-radius: 50%;
 }
+
 input:checked + .slider {
   background: linear-gradient(to right, #6a00f4, #ad00f4);
 }
+
 input:checked + .slider:before {
   transform: translateX(22px);
-}
-.slider.round {
-  border-radius: 28px;
-}
-
-/* Botão 'Pronto!' */
-.btn-pronto-cadastro {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  background: linear-gradient(to right, #000, #6a00f4);
-  color: #fff;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-  font-weight: bold;
-}
-.btn-pronto-cadastro:hover {
-  opacity: 0.8;
-}
-
-/* Footer do Cadastro */
-.footer-cadastro {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 20px 20px 40px 20px; 
-}
-
-.footer-top-cadastro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-}
-
-.contact-cadastro {
-  display: flex;
-  gap: 10px;
-}
-
-.contact-cadastro input {
-  padding: 10px;
-  border-radius: 5px;
-  border: none;
-  font-size: 0.9rem;
-}
-
-.contact-cadastro button {
-  background-color: #fff;
-  color: #000;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: 0.3s;
-}
-.contact-cadastro button:hover {
-  background-color: #ddd;
-}
-
-.contact-info-cadastro {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-.footer-bottom-cadastro {
-  margin-top: 10px;
-  font-size: 0.9rem;
-  opacity: 0.7;
 }
