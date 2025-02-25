@@ -20,6 +20,21 @@ body {
   height: 53px;
   background: white;
 }
+
+.terms{
+  font-size: 16px;
+  text-decoration: none;
+  align-items: center;
+}
+
+.menu{
+  align-items: center;
+}
+
+.terms a:hover  {
+  color: black;
+}
+
 .cadastroLeft{
   display: flex;
   align-items: center;
@@ -77,11 +92,11 @@ nav a:hover {
   justify-content: center;
   position: relative;
   font-weight: bold;
-  left: 10px;
+  /* left: 10px; */
 }
 
 /* ===== PÁGINA LOGIN ===== */
-main {
+main{
   display: flex;
   min-height: calc(100vh - 150px);
 }
@@ -150,6 +165,9 @@ main {
   border-radius: 10px;
 }
 
+.signup h2{
+  padding: 3px;
+}
 .signup form {
   display: flex;
   flex-direction: column;
