@@ -14,7 +14,7 @@
         </div>
         <nav>
             <ul class="contact">
-                <li><a href="#">testando</a></li>
+                <li><a href="abertura.html">Início</a></li>
                 <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
@@ -33,34 +33,39 @@
         </div>
 
         <div class="right-side">
-            <section class="signup" onsubmit="login()">
-                <h2>Sign Up</h2>
+            <section class="cadastro-ov" onsubmit="login()">
+                <h2>Eu sou um(a):</h2>
                 <form>
-                    <input type="text" placeholder="Insira seu nome">
-                    <input type="email" placeholder="Insira seu email">
-                    <input type="password" placeholder="Insira sua senha">
-                    <label class="terms">
-                        <input type="checkbox"> Ao continuar, você concorda com nossos <a href="#">termos de uso</a> e <a href="#">política de privacidade</a>.
+                    <label class="option">
+                      <input class="bola" type="radio" name="tipo_usuario" value="ong"> ONG
                     </label>
-                    <button type="submit">Cadastrar</button>
-                </form>
+                    
+                    <label class="option">
+                      <input class="bola" type="radio" name="tipo_usuario" value="voluntario"> Voluntário
+                    </label>
+                  </form>
+                  
             </section>
         </div>
     </main>
     <footer class="footer-cadastro">
         <p class="contact-info-cadastro">
-            <div class="contatos-icones">
-                <!-- colocar icones de redes sociais -->
-              <span>icone</span>
-              <span>icone</span>
-              <span>icone</span>
-              <span>icone</span>
-            </div>
+        <div class="contatos-icones">
+            <!-- colocar icones de redes sociais -->
+            <h2>Contato</h2>
+            <hr>
+            <p>exemplo@gmail.com</p>
+        </div>
+        <div>
+            <span><img src="assets/img/Instagram.png" alt=""></span>
+            <span><img src="assets/img/facebook.png" alt=""></span>
+            <span><img src="assets/img/Whatsapp@2x.png" alt=""></span>
+            <span><img src="assets/img/Linkedin.png" alt=""></span>
+        </div>
         </p>
-      </div>
-      <div class="footer-bottom-cadastro">
-        <p>&copy; 2025, Todas as diretrizes reservadas.</p>
-      </div>
     </footer>
+    <div class="footer-bottom-cadastro">
+        <p>&copy; 2025, Todas as diretrizes reservadas.</p>
+    </div>
 </body>
 </html>

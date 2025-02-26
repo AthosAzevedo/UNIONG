@@ -271,13 +271,91 @@ main{
   text-align: justify;
 }
 
+.cadastro-ov {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.cadastro-ov h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 -1px 10px 	#363636;
+  cursor: pointer;
+  width: 150px;
+  height: 40px;
+  margin-bottom: 10px;
+}
+
+.option input {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.bola {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 1px;
+  background-color: lightgray;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 -1px 20px silver;
+}
+
+.bola:checked {
+  background-color: black;
+}
 
 /* ===== FOOTERS ===== */
 footer {
+  font-family: 'Marko One';
   background: black;
   color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding: 25px 40px;
   text-align: center;
+}
+
+footer h2 {
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+footer hr {
+  width: 350px;
+  border-radius: 1px solid white;
+  margin-bottom: 10px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer span {
+  margin: 20px;
+}
+
+span:hover{
+  cursor: pointer;
+}
+
+.footer-bottom-cadastro {
+  color: #000;
+  height: 50px;
+  text-align: center;
+  padding: 15px;
 }
 
 .footer-cadastro {
