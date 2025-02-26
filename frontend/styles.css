@@ -317,6 +317,7 @@ main{
 
 /* ===== FOOTERS ===== */
 footer {
+  font-family: 'Marko One';
   background: black;
   color: white;
   display: flex;
