@@ -300,6 +300,21 @@ main{
   transform: scale(1.2);
 }
 
+.bola {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 1px;
+  background-color: lightgray;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 -1px 20px silver;
+}
+
+.bola:checked {
+  background-color: black;
+}
+
 /* ===== FOOTERS ===== */
 footer {
   background: black;
