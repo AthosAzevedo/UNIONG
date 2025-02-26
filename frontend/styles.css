@@ -249,6 +249,29 @@ main{
   cursor: pointer;
 }
 
+/* ===== PAGINA DE ABERTURA ===== */
+.aboutUs {
+  background: white;
+  padding: 20px;
+  width: 90%;
+  max-width: 300px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.aboutUs h2 {
+  padding: 3px;
+}
+
+.aboutUs p {
+  text-align: justify;
+}
+
+
 /* ===== FOOTERS ===== */
 footer {
   background: black;
