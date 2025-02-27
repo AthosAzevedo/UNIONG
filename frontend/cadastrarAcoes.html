@@ -2,78 +2,61 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cadastrar Ações - UNIONG</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-  <!-- HEADER (renomeado) -->
   <header class="navBar">
-      <div class="logo">
-          <img src="assets/img/LogoColorful.png" alt="tese">
+    <div class="logo">
+      <img src="assets/img/LogoColorful.png" alt="Logo">
+    </div>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">Pesquisar</a></li>
+        <li><a href="#">Cadastrar Ações</a></li>
+        <li><a href="#">Logout</a></li>
+        <div class="user-icon-cadastro">L</div>
+      </ul>
+    </nav>
+  </header>
 
-      </div>
-      <nav>
-        <ul class="menu">
-          <li><a href="abertura.html">Início</a></li>
-          <li><a href="#">Pesquisar</a></li>
-          <li><a href="#">Cadastrar Ações</a></li>
-          <li><a href="#">Logout</a></li>
-          <div class="user-icon-cadastro">L</div>
-        </ul>
-      </nav>
-    </header>
-  <!-- MAIN (renomeado) -->
-  <main class="main-cadastro">
-    <!-- Card de Formulário -->
-    <div class="form-card-cadastro">
-      <label for="nomeAcao" class="form-label-cadastro">Nome da Ação</label>
-      <input 
-        type="text" 
-        id="nomeAcao" 
-        placeholder="Ex: Todos juntos" 
-        required
-      >
+  <main>
+    <div class="left-side"></div>
+    <div class="right-side">
+      <div class="form-card-cadastro">
+        <label for="nomeAcao" class="form-label-cadastro">Nome da Ação</label>
+        <input type="text" id="nomeAcao" placeholder="Ex: Todos juntos" required>
 
-      <label for="imagemAcao" class="form-label-cadastro">Cadastrar uma imagem (PNG, JPG, JPEG)</label>
-      <input 
-        type="file" 
-        id="imagemAcao" 
-        accept=".png, .jpg, .jpeg"
-        required
-      >
-
-      <div class="toggle-group-cadastro">
-        <label for="aceitaVoluntarios">Aceitando voluntários</label>
-        <label class="switch">
-          <input type="checkbox" id="aceitaVoluntarios">
-          <span class="slider round"></span>
+        <label for="imagemAcao" class="form-label-cadastro">Cadastrar uma imagem (PNG, JPG, JPEG)</label>
+        <label for="imagemAcao" class="upload-label">
+          <img src="assets/img/upload-icon.png" alt="Upload">
         </label>
-      </div>
+        <input type="file" id="imagemAcao" accept=".png, .jpg, .jpeg" required>
 
-      <button type="button" class="btn-pronto-cadastro">Pronto!</button>
+        <div class="toggle-group-cadastro">
+          <label for="aceitaVoluntarios">Aceitando voluntários</label>
+          <input type="checkbox" id="aceitaVoluntarios">
+        </div>
+
+        <button type="button" class="btn-pronto-cadastro">Pronto!</button>
+      </div>
     </div>
   </main>
 
-  <!-- FOOTER (renomeado) -->
   <footer class="footer-cadastro">
-    <p class="contact-info-cadastro">
-    <div class="contatos-icones">
-        <!-- colocar icones de redes sociais -->
-        <h2>Contato</h2>
-        <hr>
-        <p>exemplo@gmail.com</p>
-    </div>
+    <h2>Contato</h2>
+    <hr>
+    <p>exemplo@gmail.com</p>
     <div>
-        <span><img src="assets/img/Instagram.png" alt=""></span>
-        <span><img src="assets/img/facebook.png" alt=""></span>
-        <span><img src="assets/img/Whatsapp@2x.png" alt=""></span>
-        <span><img src="assets/img/Linkedin.png" alt=""></span>
+      <span><img src="assets/img/Instagram.png" alt="Instagram"></span>
+      <span><img src="assets/img/facebook.png" alt="Facebook"></span>
+      <span><img src="assets/img/Whatsapp@2x.png" alt="WhatsApp"></span>
+      <span><img src="assets/img/Linkedin.png" alt="LinkedIn"></span>
     </div>
-    </p>
-</footer>
-<div class="footer-bottom-cadastro">
     <p>&copy; 2025, Todas as diretrizes reservadas.</p>
-</div>
+  </footer>
+
 </body>
 </html>
