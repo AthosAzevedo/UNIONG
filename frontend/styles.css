@@ -189,6 +189,7 @@ main{
   color: white;
   cursor: pointer;
   transition: background 0.3s ease;
+  border-radius: 29px;
 }
 
 .signup button:hover {
@@ -379,6 +380,41 @@ span:hover{
   border: none;
 }
 
+.forgot-password{
+  position: relative;
+  width: 257px;
+  height: 39px;
+  font-family: 'Martel Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: justify;
+  margin-left: 2px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.forgot-password:hover{
+  color: rgba(0, 0, 0, 0.88);
+}
+
+
+
+.signup-cta{
+justify-content: center;
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 13px;
+color: rgba(0, 0, 0, 0.75);
+}
+
+.cadastrar{
+  text-decoration: none;
+  color: #72A1DF;
+}
 .contact button,
 .contact-cadastro button {
   padding: 10px 15px;
