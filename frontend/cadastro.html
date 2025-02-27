@@ -10,6 +10,7 @@
     <header class="navBar">
         <div class="logo">
             <img src="assets/img/LogoColorful.png" alt="tese">
+
         </div>
         <nav>
             <ul class="contact">
@@ -33,13 +34,15 @@
 
         <div class="right-side">
             <section class="signup" onsubmit="login()">
-                <h2>Sign In</h2>
+                <h2>Sign Up</h2>
                 <form>
                     <input type="text" placeholder="Insira seu nome">
+                    <input type="email" placeholder="Insira seu email">
                     <input type="password" placeholder="Insira sua senha">
-                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
-                    <p class="signup-cta">Ainda não tem cadastro? <a class="cadastrar" href="cadastro.html"> Cadastrar</a></p>
-                    <button class="buttonSubmit" href="loginuser.html" type="submit">Login</button>
+                    <label class="terms">
+                        <input type="checkbox"> Ao continuar, você concorda com nossos <a href="#">termos de uso</a> e <a href="#">política de privacidade</a>.
+                    </label>
+                    <button href="cadastrouser.html" type="submit">Cadastrar</button>
                 </form>
             </section>
         </div>
