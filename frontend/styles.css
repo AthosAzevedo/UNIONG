@@ -360,36 +360,80 @@ main{
   color: white;
   border-radius: 10px;
   overflow: hidden;
-  width: 371px;
+  width: 383px;
+  height: 141px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .NomeDaAcao{
-  font-weight: 400;
+width: 120px;
+height: 20px;
+
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 11px;
+line-height: 20px;
+/* identical to box height */
+
+color: rgba(240, 240, 240, 0.9);
 }
+
 .informacaoONG{
   font-size: 9px;
   color: #f0f0f0;
   opacity: 0.63;
+  /* Cidade, Estado */
+width: 120px;
+height: 16px;
+
+
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 9px;
+line-height: 16px;
+
+color: rgba(240, 240, 240, 0.63);
+
+
 }
 .card img {
   width: 175px;
   height: 150px;
   object-fit: cover;
 }
+
 .itemCard {
   padding: 15px;
 }
+
 .botao{
   display: block;
   text-align: center;
-  padding: 10px;
-  background-color: rgba(255, 255, 255, 0.1);
+  padding: px;
+  box-sizing: content-box;
+  background-color: rgba(225, 225, 225, 0.2);
   color: #ffff;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-top: 10px;
+  width: 64px;
+  height: 19px;
   box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
-  
+}
+
+.ins{
+width: 59px;
+height: 18px;
+
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 300;
+font-size: 10px;
+line-height: 18px;
+text-align: justify;
+
+color: #FFFFFF;
 }
 
 .left-side2 {
@@ -422,10 +466,23 @@ main{
 }
 
 .boxItem{
-  background-color: #000;
-  border-radius: 5px;
-  font-size: 0.56rem;
+position: flex;
+background-color: #000000;
+color: white;
+width: 165px;
+height: 41px; 
+border-radius: 8px;
 }
+
+.im{
+/*possivel css da imagem no cartão de ação*/
+position: absolute;
+width: 175px;
+height: 141px;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 4px;
+}
+
 
 /* ===== FOOTERS ===== */
 footer {
